@@ -1,0 +1,163 @@
+@media screen and (min-width: 968px) {
+    .mobile__menu-bt{
+        display: none;
+    }
+
+    .desktop__menu{
+        display: block;
+    }
+
+    .immersive__box{
+        justify-content: left;
+    }
+
+    .flex{
+        max-width: 1200px;
+    }
+
+    .immersive__text{
+        width: 50%;
+        padding: 1rem;
+        font-size: 4rem;
+    }
+
+    #header{
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-hero.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .inter__box{
+        display: flex;
+    }
+
+    .inter__box{
+        position: relative;
+    }
+
+    .inter__title{
+        font-size: 3.5rem;
+    }
+
+    .inter__texts{
+        position: absolute;
+        background-color: white;
+        height: 400px;
+        width: 50%;
+        right: 8%;
+        top: 30%;
+        padding: 0 4rem;
+    }
+
+    .interactive__section{
+        padding: 6rem 0;
+    }
+
+    .creations__title{
+        margin-top: 2rem;
+    }
+
+    .creations__cards{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 2;
+        grid-gap: 2rem
+    }
+
+    .card{
+        grid-column: span 3;
+        height: 500px;
+    }
+
+    .card:nth-child(1){
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-deep-earth.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card:nth-child(2){
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-night-arcade.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card:nth-child(3){
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-soccer-team.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card:nth-child(4){
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-grid.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card:nth-child(5){
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-from-above.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card:nth-child(6){
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-pocket-borealis.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card:nth-child(7){
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-curiosity.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card:nth-child(8){
+        background-image: url(../loopstudios-landing-page-main/images/desktop/image-fisheye.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card{
+        position: relative;
+    }
+
+    .card__title{
+       position: absolute;
+       bottom: 20%;
+       font-size: 3rem;
+    }
+
+    .creations__sec{
+        margin-bottom: 3rem;
+    }
+
+    .seeall__btn{
+        display: none;
+    }
+
+    .creations__title-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+
+    .seeall__btn__desktop{
+        display: block;
+    }
+    
+    .footer__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__infos{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    #footer{
+        padding: 1.5rem;
+    }
+}
+

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#header{
+    position: relative;
+    height: 100vh;
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 3rem 1rem;
+}
+
+.mobile__menu{
+    position: absolute;
+    background-color: var(--Black);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;   
+    padding-top: 8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: .6s;
+}
+
+.desktop__menu{
+    display: none;
+}
+
+.desktop__menu a{
+    text-decoration: none;
+    color: var(--White);
+    margin-right: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 1rem;
+    transition: .6s;
+}
+
+.desktop__menu a:hover{
+    color: var(--Black);
+}
+
+.active{
+    transform: translateY(0%);
+}
+
+.mobile__menu a{
+    color: var(--White);
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    transition: .6s;
+}
+
+.mobile__menu a:hover{
+    background-color: var(--Dark-Gray);
+    color: var(--Black);
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile__menu-bt{
+    position: sticky;
+    z-index: 99;
+    padding: .6rem;
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.logo{
+    position: sticky;
+    z-index: 99;
+}
+
+.immersive__box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.immersive__text{
+    color: var(--White);
+    font-size: 2.5rem;
+    font-weight: 100;
+    width: 98%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Josefin Sans', sans-serif;
+
+    border: 2px solid var(--White);
+    padding: 2rem 0.5rem;
+
+}
+
+/*interactive section*/
+
+.interactive__section{
+    padding: 4rem 0;
+}
+
+.inter__content img{
+    width: 100%;
+}
+
+.flex{
+    margin: 0 auto;
+    max-width: 90%;
+    height: 100%;
+}
+
+.inter__title{
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    margin: 2rem 0;
+    font-weight: 300;
+}
+
+.inter__p{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--Very-Dark-Gray);
+}
+
+/*Creations section*/
+
+.creations__title{
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    margin: 2rem 0;
+    font-weight: 300;
+}
+
+.card:nth-child(1){
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(2){
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(3){
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(4){
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-grid.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(5){
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-from-above.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(6){
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(7){
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-curiosity.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card:nth-child(8){
+    background-image: url(../loopstudios-landing-page-main/images/mobile/image-fisheye.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card{
+    height: 150px;
+    margin-top: 1.2rem;
+    color: var(--White);
+    transition: .6s;
+}
+
+.card:hover{
+    transform:  scale(1.05);
+}
+
+.card__title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    transform: translateY(65px);
+    padding: 0 1.2rem;
+    text-transform: uppercase;
+}
+
+.seeall__btn{
+    text-transform: uppercase;
+    background: transparent;
+    padding: .5rem 1.8rem;
+    outline: none;
+    border: 2px solid var(--Very-Dark-Gray);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+}
+
+.seeall__btn__desktop{
+    text-transform: uppercase;
+    background: transparent;
+    padding: .5rem 2rem;
+    outline: none;
+    border: 2px solid var(--Very-Dark-Gray);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+
+.btn__box{
+    text-align: center;
+}
+
+/*footer*/
+
+#footer{
+    background-color: var(--Black);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer__infos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer__infos a{
+    text-decoration: none;
+    color: var(--White);
+    margin-top: 1rem;
+}
+
+.social__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+.p__footer{
+    color: var(--Dark-Gray);
+}
+
+.p__mentor__http a{
+    color: var(--White);
+    font-family: 'Josefin Sans', sans-serif;
+}
